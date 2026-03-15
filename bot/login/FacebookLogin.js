@@ -1,4 +1,4 @@
-//coder by Hoàng Quyết - fb: https://www.facebook.com/profile.php?id=100009801367183  //
+//Coded by JAHIDUL ISLAM SAGOR - fb: fb.com/SAGOR.69x  //
 
 const axios = require('axios');
 const crypto = require('crypto');
@@ -58,7 +58,7 @@ module.exports = class FacebookLogin {
       try {
         const response = await axios.request(options);
         const data = response.data;
-        
+
         data.access_token_eaad6v7 = await this._convertToken(data.access_token);
         data.cookies = await this._convertCookie(data.session_cookies);
         data.session_cookies = data.session_cookies.map(e => ({
@@ -71,7 +71,7 @@ module.exports = class FacebookLogin {
 
         return {
           status: true,
-          message: 'Lấy thông tin thành công!',
+          message: 'Information retrieved successfully.!',
           data: data
         };
       } catch (error) {
@@ -86,7 +86,7 @@ module.exports = class FacebookLogin {
         if (twofactor === '0' && (!_2fa || _2fa === "0")) {
           return {
             status: false,
-            message: 'Vui lòng nhập mã xác thực 2 lớp!'
+            message: 'Please enter the two-factor authentication code!'
           };
         }
 
@@ -105,7 +105,7 @@ module.exports = class FacebookLogin {
           form.first_factor = errorData.login_first_factor;
           form.credentials_type = "two_factor";
           form.sig = this._encodeSig(this._sort(form));
-          
+
           options.data = form;
           const response = await axios.request(options);
           const data = response.data;
@@ -122,21 +122,21 @@ module.exports = class FacebookLogin {
 
           return {
             status: true,
-            message: 'Lấy thông tin thành công!',
+            message: 'Information retrieved successfully.!',
             data: data
           };
 
         } catch (e) {
           return {
             status: false,
-            message: 'Mã xác thực 2 lớp không hợp lệ!'
+            message: 'The two-factor authentication code is invalid!'
           };
         }
       }
     } catch (e) {
       return {
         status: false,
-        message: 'Vui lòng kiểm tra lại tài khoản, mật khẩu!'
+        message: 'Please double check your account and password!'
       };
     }
   }
