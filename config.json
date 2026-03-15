@@ -1,0 +1,152 @@
+{
+  "facebookAccount": {
+    "email": "",
+    "password": "",
+    "2FASecret": "",
+    "i_user": "",
+    "intervalGetNewCookie": 1440
+  },
+  "antiInbox": false,
+  "language": "en",
+  "nickNameBot": "SaGor",
+  "prefix": ".",
+  "noPrefix": false,
+  "adminOnly": {
+    "enable": false,
+    "ignoreCommand": []
+  },
+  "adminBot": [
+    "61581197276223"
+  ],
+  "premiumUsers": [
+    "61581197276223"
+  ],
+  "devUsers": [
+    "61581197276223"
+  ],
+  "creator": [
+    "61581197276223"
+  ],
+  "vipUsers": [
+    "61581197276223"
+  ],
+  "rootOwner": [
+    "61581197276223"
+  ],
+  "owner": [
+    "61581197276223"
+  ],
+  "coOwner": [
+    "61581197276223"
+  ],
+  "moderator": [
+    "61581197276223"
+  ],
+  "reactBy": {
+    "delete": [
+      "😡",
+      "😠",
+      "🤬",
+      "😾"
+    ],
+    "kick": [
+      "🚫",
+      "🦶",
+      "🦵",
+      "🖕"
+    ]
+  },
+  "whiteListMode": {
+    "enable": false,
+    "whiteListIds": []
+  },
+  "whiteListModeThread": {
+    "enable": false,
+    "whiteListThreadIds": []
+  },
+  "database": {
+    "type": "sqlite",
+    "uriMongodb": "",
+    "autoSyncWhenStart": false,
+    "autoRefreshThreadInfoFirstTime": true
+  },
+  "timeZone": "Asia/Dhaka",
+  "serverUptime": {
+    "enable": false,
+    "port": 3001,
+    "socket": {
+      "enable": false,
+      "channelName": "uptime",
+      "verifyToken": ""
+    }
+  },
+  "autoRestart": {
+    "time": null
+  },
+  "autoUptime": {
+    "enable": false,
+    "timeInterval": 180,
+    "url": ""
+  },
+  "autoLoadScripts": {
+    "enable": false,
+    "ignoreCmds": "",
+    "ignoreEvents": ""
+  },
+  "autoRefreshFbstate": true,
+  "autoReloginWhenChangeAccount": false,
+  "autoRestartWhenListenMqttError": false,
+  "restartListenMqtt": {
+    "enable": true,
+    "timeRestart": 3600000,
+    "delayAfterStopListening": 2000,
+    "logNoti": false
+  },
+  "notiWhenListenMqttError": {
+    "gmail": {
+      "enable": false,
+      "emailGetNoti": ""
+    },
+    "telegram": {
+      "enable": true,
+      "botToken": "",
+      "chatId": ""
+    },
+    "discordHook": {
+      "enable": false,
+      "webhookUrl": ""
+    }
+  },
+  "hideNotiMessage": {
+    "commandNotFound": false,
+    "adminOnly": false,
+    "threadBanned": false,
+    "userBanned": false,
+    "needRoleToUseCmd": false,
+    "needRoleToUseCmdOnReply": false,
+    "needRoleToUseCmdOnReaction": false
+  },
+  "logEvents": {
+    "disableAll": false,
+    "message": true,
+    "message_reaction": true,
+    "message_unsend": true,
+    "message_reply": true,
+    "event": true,
+    "read_receipt": true,
+    "typ": false,
+    "presence": false
+  },
+  "optionsFca": {
+    "forceLogin": true,
+    "listenEvents": true,
+    "updatePresence": true,
+    "listenTyping": false,
+    "logLevel": "error",
+    "selfListen": false,
+    "selfListenEvent": false,
+    "autoMarkDelivery": false,
+    "autoReconnect": false,
+    "fca": "sagor-nx-fca"
+  }
+}
